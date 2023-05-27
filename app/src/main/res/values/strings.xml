@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Best Quotes of the day</string>
+    <string name="total_quotes">Total Quotes</string>
+    <string name="category_name">Category Name</string>
+</resources>

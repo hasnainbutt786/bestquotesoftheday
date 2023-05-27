@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.hzdevelopers.bestquotesoftheday.ui.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_viewAllFragment"
+            app:destination="@id/viewAllFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.hzdevelopers.bestquotesoftheday.ui.FavouriteFragment"
+        android:label="FavouriteFragment"
+        tools:layout="@layout/fragment_favourite"/>
+    <fragment
+        android:id="@+id/viewAllFragment"
+        android:name="com.hzdevelopers.bestquotesoftheday.ui.ViewAllFragment"
+        android:label="ViewAllFragment"
+        tools:layout="@layout/fragment_viewall">
+        <action
+            android:id="@+id/action_viewAllFragment_to_oneImageViewFragment"
+            app:destination="@id/oneImageViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneImageViewFragment"
+        android:name="com.hzdevelopers.bestquotesoftheday.ui.OneImageViewFragment"
+        android:label="OneImageViewFragment"
+        tools:layout="@layout/fragment_oneimageview"/>
+</navigation>
